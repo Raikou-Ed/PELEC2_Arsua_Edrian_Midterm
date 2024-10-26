@@ -1,0 +1,335 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f4f4f9 30%, #e0f7fa);
+    padding-bottom: 20px;
+}
+
+/* Introduction Section Styling */
+#introduction {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #0066cc, #0055a5);
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#introduction h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f0faff;
+}
+
+#introduction p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#introduction img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 25px;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#introduction img:hover {
+    transform: scale(1.1);
+}
+
+#introduction button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-size: 1em;
+    color: #0066cc;
+    background-color: #fff;
+    border: 2px solid #0066cc;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    font-weight: bold;
+}
+
+#introduction button:hover {
+    background-color: #e6e6e6;
+    color: #004080;
+}
+
+/* About Me Section Styling */
+#about-me {
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #fff, #e0f7fa);
+    color: #333;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+#about-me h2 {
+    font-size: 2.4em;
+    color: #0066cc;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+#about-me h2::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #0066cc;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about-me p {
+    font-size: 1.1em;
+    margin: 15px auto;
+    max-width: 800px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Media Styling */
+.media-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.media-container img,
+.media-container video {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #0066cc;
+}
+
+.media-container img:hover,
+.media-container video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.media-container img {
+    filter: grayscale(40%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.media-container img:hover {
+    filter: grayscale(0%);
+}
+/* Education Section Styling */
+#education {
+    padding: 60px 20px;
+    background-color: #f7fafc;
+    color: #333;
+    text-align: left;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#education h2 {
+    text-align: center;
+    font-size: 2.4em;
+    color: #0066cc;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.education-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 4px solid #0066cc;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.education-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.education-item p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.education-item p strong {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.education-dates {
+    float: right;
+    font-weight: bold;
+    color: #555;
+}
+
+.education-item p:last-child {
+    font-style: italic;
+    color: #777;
+}
+/* Image Styling in Education Section */
+.education-image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.education-image-container img {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #0066cc;
+    filter: grayscale(40%);
+}
+
+.education-image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    filter: grayscale(0%);
+}
+/* Skills Section Styling */
+#skills {
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #e0f7fa, #f4f4f9);
+    color: #333;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+#skills h2 {
+    font-size: 2.4em;
+    color: #0066cc;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.technical-skills, .soft-skills {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.technical-skills h3, .soft-skills h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.technical-skills ul, .soft-skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.technical-skills li, .soft-skills li {
+    font-size: 1.1em;
+    color: #555;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.technical-skills li i, .soft-skills li i {
+    color: #0066cc;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+/* Responsive Styling for Skills Section */
+@media (min-width: 768px) {
+    .skills-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .technical-skills, .soft-skills {
+        width: 45%;
+    }
+}
+/* Contact Section Styling */
+#contact {
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #e0f7fa, #ffffff);
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.4em;
+    color: #0066cc;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-list i {
+    color: #0066cc;
+    font-size: 1.5em;
+}
